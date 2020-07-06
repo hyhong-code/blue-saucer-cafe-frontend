@@ -7257,7 +7257,7 @@ header {
       header .hero-text .btn:hover::before {
         left: 100%; }
 
-.about .section-heading h4 {
+.section-heading h4 {
   text-transform: uppercase;
   color: #101d2c;
   line-height: 0;
@@ -7265,7 +7265,7 @@ header {
   font-weight: 300;
   letter-spacing: 1px; }
 
-.about .section-heading h1 {
+.section-heading h1 {
   font-family: "Niconne", cursive;
   color: #d3a463; }
 
@@ -7281,7 +7281,7 @@ header {
 .menu {
   background-color: #101d2c; }
   .menu .shop-info h1 {
-    font-family: "Teki", sans-serif;
+    font-family: "Teko", sans-serif;
     font-size: 25px;
     font-weight: 300;
     text-transform: uppercase; }
@@ -7293,17 +7293,51 @@ header {
     color: rgba(255, 255, 255, 0.5); }
   .menu hr {
     border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .menu .point-left,
+  .menu .point-right {
+    position: relative;
+    background-color: #fff;
+    display: flex; }
+  .menu .point-left::before,
+  .menu .point-right::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 1; }
+  .menu .menu-item-desc {
+    padding: 50px 10px;
+    color: #212529;
+    margin: auto; }
+    .menu .menu-item-desc h6 {
+      color: #e4c79f;
+      font-size: 20px; }
+    .menu .menu-item-desc h1 {
+      color: #101d2c;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-family: "Teko", sans-serif;
+      font-weight: 300; }
 
 @media (min-width: 576px) {
   header .navbar-brand {
     max-width: 150px; }
   header .hamburger-menu {
     top: 35px;
-    right: 25px; } }
+    right: 25px; }
+  main .point-left::before,
+  main .point-right::before {
+    display: none; } }
 
 @media (min-width: 768px) {
   header .hero-text .btn {
-    width: 150px; } }
+    width: 150px; }
+  main .menu-item-desc {
+    padding: 50px 20px; } }
 
 @media (min-width: 992px) {
   header .container {
@@ -7344,3 +7378,15 @@ header {
           transition: transform 0.4s; }
         header .nav-list .nav-item .nav-link:hover::before {
           transform: scaleX(1); } }
+
+@media (min-width: 1200px) {
+  .menu .point-left::before,
+  .menu .point-right::before {
+    display: block;
+    top: 50%;
+    left: initial;
+    transform: translate(0, -50%) rotate(45deg); }
+  .menu .point-left::before {
+    left: -12px; }
+  .menu .point-right::before {
+    right: -12px; } }

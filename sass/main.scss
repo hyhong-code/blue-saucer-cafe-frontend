@@ -139,24 +139,24 @@ header {
   }
 }
 
-// ABOUT
-.about {
-  .section-heading {
-    h4 {
-      text-transform: uppercase;
-      color: #101d2c;
-      line-height: 0;
-      font-family: "Teko", sans-serif;
-      font-weight: 300;
-      letter-spacing: 1px;
-    }
-
-    h1 {
-      font-family: "Niconne", cursive;
-      color: darken($color: #e4c79f, $amount: 15%);
-    }
+.section-heading {
+  h4 {
+    text-transform: uppercase;
+    color: #101d2c;
+    line-height: 0;
+    font-family: "Teko", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
   }
 
+  h1 {
+    font-family: "Niconne", cursive;
+    color: darken($color: #e4c79f, $amount: 15%);
+  }
+}
+
+// ABOUT
+.about {
   .btn {
     width: 150px;
     color: darken($color: #e4c79f, $amount: 15%) !important;
@@ -176,7 +176,7 @@ header {
 
   .shop-info {
     h1 {
-      font-family: "Teki", sans-serif;
+      font-family: "Teko", sans-serif;
       font-size: 25px;
       font-weight: 300;
       text-transform: uppercase;
@@ -189,11 +189,51 @@ header {
 
     p,
     address {
-      color: rgba(white, 0.5);
+      color: rgba(#fff, 0.5);
     }
   }
+
   hr {
-    border-top: 1px solid rgba(white, 0.1);
+    border-top: 1px solid rgba(#fff, 0.1);
+  }
+
+  .point-left,
+  .point-right {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+  }
+
+  .point-left::before,
+  .point-right::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 1;
+  }
+
+  .menu-item-desc {
+    padding: 50px 10px;
+    color: #212529;
+    margin: auto;
+
+    h6 {
+      color: #e4c79f;
+      font-size: 20px;
+    }
+
+    h1 {
+      color: #101d2c;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-family: "Teko", sans-serif;
+      font-weight: 300;
+    }
   }
 }
 
@@ -208,6 +248,13 @@ header {
       right: 25px;
     }
   }
+
+  main {
+    .point-left::before,
+    .point-right::before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -216,6 +263,12 @@ header {
       .btn {
         width: 150px;
       }
+    }
+  }
+
+  main {
+    .menu-item-desc {
+      padding: 50px 20px;
     }
   }
 }
@@ -277,6 +330,26 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    .point-left::before,
+    .point-right::before {
+      display: block;
+      top: 50%;
+      left: initial;
+      transform: translate(0, -50%) rotate(45deg);
+    }
+
+    .point-left::before {
+      left: -12px;
+    }
+
+    .point-right::before {
+      right: -12px;
     }
   }
 }
