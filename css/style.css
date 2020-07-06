@@ -7379,6 +7379,20 @@ header {
         header .nav-list .nav-item .nav-link:hover::before {
           transform: scaleX(1); } }
 
+.beans .card-body h1 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Teko", sans-serif;
+  font-weight: 300; }
+
+.beans .card-body h6 {
+  font-size: 15px;
+  color: #d3a463; }
+
+footer {
+  background-color: #101d2c;
+  color: rgba(255, 255, 255, 0.6); }
+
 @media (min-width: 1200px) {
   .menu .point-left::before,
   .menu .point-right::before {

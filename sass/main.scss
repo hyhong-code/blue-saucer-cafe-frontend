@@ -334,6 +334,29 @@ header {
   }
 }
 
+// BEANS
+.beans {
+  .card-body {
+    h1 {
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-family: "Teko", sans-serif;
+      font-weight: 300;
+    }
+
+    h6 {
+      font-size: 15px;
+      color: darken($color: #e4c79f, $amount: 15%);
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background-color: #101d2c;
+  color: rgba(#fff, 0.6);
+}
+
 @media (min-width: 1200px) {
   .menu {
     .point-left::before,
