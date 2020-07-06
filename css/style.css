@@ -7278,6 +7278,22 @@ header {
     color: white !important;
     background-color: #d3a463; }
 
+.menu {
+  background-color: #101d2c; }
+  .menu .shop-info h1 {
+    font-family: "Teki", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .menu .shop-info i {
+    color: #e4c79f;
+    font-size: 50px; }
+  .menu .shop-info p,
+  .menu .shop-info address {
+    color: rgba(255, 255, 255, 0.5); }
+  .menu hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
 @media (min-width: 576px) {
   header .navbar-brand {
     max-width: 150px; }

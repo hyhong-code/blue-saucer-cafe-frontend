@@ -170,6 +170,33 @@ header {
   }
 }
 
+// MENU
+.menu {
+  background-color: #101d2c;
+
+  .shop-info {
+    h1 {
+      font-family: "Teki", sans-serif;
+      font-size: 25px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    i {
+      color: #e4c79f;
+      font-size: 50px;
+    }
+
+    p,
+    address {
+      color: rgba(white, 0.5);
+    }
+  }
+  hr {
+    border-top: 1px solid rgba(white, 0.1);
+  }
+}
+
 @media (min-width: 576px) {
   header {
     .navbar-brand {
