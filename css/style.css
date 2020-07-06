@@ -7257,7 +7257,7 @@ header {
       header .hero-text .btn:hover::before {
         left: 100%; }
 
-.section-heading h4 {
+.about .section-heading h4 {
   text-transform: uppercase;
   color: #101d2c;
   line-height: 0;
@@ -7265,7 +7265,7 @@ header {
   font-weight: 300;
   letter-spacing: 1px; }
 
-.section-heading h1 {
+.about .section-heading h1 {
   font-family: "Niconne", cursive;
   color: #d3a463; }
 
@@ -7277,3 +7277,54 @@ header {
   .about .btn:hover {
     color: white !important;
     background-color: #d3a463; }
+
+@media (min-width: 576px) {
+  header .navbar-brand {
+    max-width: 150px; }
+  header .hamburger-menu {
+    top: 35px;
+    right: 25px; } }
+
+@media (min-width: 768px) {
+  header .hero-text .btn {
+    width: 150px; } }
+
+@media (min-width: 992px) {
+  header .container {
+    padding: 0 15px; }
+  header .hamburger-menu {
+    display: none; }
+  header .navbar-brand {
+    position: initial;
+    transform: initial; }
+  header .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: initial;
+    flex-direction: row;
+    opacity: initial;
+    transform: initial;
+    transition: initial;
+    padding: 0;
+    margin: 0; }
+    header .nav-list .nav-item {
+      margin: 0 30px; }
+      header .nav-list .nav-item:last-child {
+        margin-right: 0; }
+      header .nav-list .nav-item .nav-link {
+        position: relative;
+        padding: 0; }
+        header .nav-list .nav-item .nav-link::before {
+          content: "";
+          position: absolute;
+          background-color: #d3a463;
+          height: 2px;
+          left: -3px;
+          right: -3px;
+          bottom: -3px;
+          transform: scaleX(0);
+          transform-origin: center;
+          transition: transform 0.4s; }
+        header .nav-list .nav-item .nav-link:hover::before {
+          transform: scaleX(1); } }
