@@ -7318,7 +7318,7 @@ header {
       font-size: 20px; }
     .menu .menu-item-desc h1 {
       color: #101d2c;
-      font-size: 30px;
+      font-size: 24px;
       letter-spacing: 1px;
       font-family: "Teko", sans-serif;
       font-weight: 300; }
@@ -7389,4 +7389,9 @@ header {
   .menu .point-left::before {
     left: -12px; }
   .menu .point-right::before {
-    right: -12px; } }
+    right: -12px; }
+  .menu .menu-item-desc p {
+    display: none; }
+  .menu .menu-item-desc .btn {
+    color: #fff !important;
+    background-color: #d3a463; } }
