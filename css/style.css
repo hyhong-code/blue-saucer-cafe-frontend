@@ -7237,6 +7237,7 @@ header {
     transform: translate(-50%, -45%);
     text-align: center; }
     header .hero-text h1 {
+      font-size: 3rem;
       font-family: "Niconne", cursive;
       color: #d3a463; }
     header .hero-text .btn {
@@ -7323,23 +7324,43 @@ header {
       font-family: "Teko", sans-serif;
       font-weight: 300; }
 
+.beans .card-body h1 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Teko", sans-serif;
+  font-weight: 300; }
+
+.beans .card-body h6 {
+  font-size: 15px;
+  color: #d3a463; }
+
+footer {
+  background-color: #101d2c;
+  color: rgba(255, 255, 255, 0.6); }
+
 @media (min-width: 576px) {
   header .navbar-brand {
     max-width: 150px; }
   header .hamburger-menu {
     top: 35px;
     right: 25px; }
+  header .hero-text h1 {
+    font-size: 4rem; }
   main .point-left::before,
   main .point-right::before {
     display: none; } }
 
 @media (min-width: 768px) {
+  header .hero-text h1 {
+    font-size: 5rem; }
   header .hero-text .btn {
     width: 150px; }
   main .menu-item-desc {
     padding: 50px 20px; } }
 
 @media (min-width: 992px) {
+  header .hero-text h1 {
+    font-size: 6rem; }
   header .container {
     padding: 0 15px; }
   header .hamburger-menu {
@@ -7379,21 +7400,9 @@ header {
         header .nav-list .nav-item .nav-link:hover::before {
           transform: scaleX(1); } }
 
-.beans .card-body h1 {
-  font-size: 25px;
-  letter-spacing: 1px;
-  font-family: "Teko", sans-serif;
-  font-weight: 300; }
-
-.beans .card-body h6 {
-  font-size: 15px;
-  color: #d3a463; }
-
-footer {
-  background-color: #101d2c;
-  color: rgba(255, 255, 255, 0.6); }
-
 @media (min-width: 1200px) {
+  header .hero-text h1 {
+    font-size: 7rem; }
   .menu .point-left::before,
   .menu .point-right::before {
     display: block;

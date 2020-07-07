@@ -105,6 +105,7 @@ header {
     text-align: center;
 
     h1 {
+      font-size: 3rem;
       font-family: "Niconne", cursive;
       color: darken($color: #e4c79f, $amount: 15%);
     }
@@ -237,6 +238,29 @@ header {
   }
 }
 
+// BEANS
+.beans {
+  .card-body {
+    h1 {
+      font-size: 25px;
+      letter-spacing: 1px;
+      font-family: "Teko", sans-serif;
+      font-weight: 300;
+    }
+
+    h6 {
+      font-size: 15px;
+      color: darken($color: #e4c79f, $amount: 15%);
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background-color: #101d2c;
+  color: rgba(#fff, 0.6);
+}
+
 @media (min-width: 576px) {
   header {
     .navbar-brand {
@@ -246,6 +270,12 @@ header {
     .hamburger-menu {
       top: 35px;
       right: 25px;
+    }
+
+    .hero-text {
+      h1 {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -260,6 +290,10 @@ header {
 @media (min-width: 768px) {
   header {
     .hero-text {
+      h1 {
+        font-size: 5rem;
+      }
+
       .btn {
         width: 150px;
       }
@@ -275,6 +309,11 @@ header {
 
 @media (min-width: 992px) {
   header {
+    .hero-text {
+      h1 {
+        font-size: 6rem;
+      }
+    }
     .container {
       padding: 0 15px;
     }
@@ -334,30 +373,15 @@ header {
   }
 }
 
-// BEANS
-.beans {
-  .card-body {
-    h1 {
-      font-size: 25px;
-      letter-spacing: 1px;
-      font-family: "Teko", sans-serif;
-      font-weight: 300;
-    }
-
-    h6 {
-      font-size: 15px;
-      color: darken($color: #e4c79f, $amount: 15%);
+@media (min-width: 1200px) {
+  header {
+    .hero-text {
+      h1 {
+        font-size: 7rem;
+      }
     }
   }
-}
 
-// FOOTER
-footer {
-  background-color: #101d2c;
-  color: rgba(#fff, 0.6);
-}
-
-@media (min-width: 1200px) {
   .menu {
     .point-left::before,
     .point-right::before {
