@@ -8,7 +8,7 @@
 
 ---
 
-[Live page](https://hyhong-code.github.io/blue-saucer-cafe-frontend/)
+[Live page](https://hyhong-code.github.io/blue-saucer-cafe-sass/)
 
 ## SHOWCASE:
 
